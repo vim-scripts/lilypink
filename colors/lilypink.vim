@@ -3,7 +3,7 @@
 " See http://www.vim.org/scripts/script.php?script_id=2778 for more info
 " Vim colorscheme: a dark one
 " Maintainer:  lilydjwg <lilydjwg@gmail.com>
-" Version:     1.1
+" Version:     1.2
 " License:     Vim license, see :help 'license'
 " http://www.vim.org/scripts/script.php?script_id=3323
 
@@ -28,6 +28,9 @@ if version >= 700
   highlight PmenuThumb gui=reverse cterm=reverse
   highlight PmenuSel guifg=#000000 guibg=#cae682 ctermfg=16 ctermbg=149 cterm=NONE
 endif
+if version >= 703
+  highlight ColorColumn guibg=#000000 ctermbg=0 cterm=NONE
+endif
 
 " General colors
 highlight Cursor guifg=NONE guibg=#666666 gui=NONE ctermbg=241 cterm=NONE
@@ -49,7 +52,7 @@ highlight SpecialKey guifg=#d090ff guibg=#242424 gui=NONE ctermfg=177 ctermbg=23
 highlight Special guifg=#ffddaa gui=NONE ctermfg=223 cterm=NONE
 
 highlight IncSearch guifg=#33ff1c guibg=#000000 gui=underline ctermfg=46 ctermbg=16 cterm=underline
-highlight Search guifg=NONE guibg=#000000 ctermbg=16 cterm=NONE
+highlight Search guifg=NONE guibg=#000000 ctermfg=NONE ctermbg=16 cterm=NONE
 highlight WildMenu guifg=#33ff1c guibg=#000000 gui=underline ctermfg=46 ctermbg=16 cterm=underline
 
 highlight TabLine guifg=#e0e0e0 guibg=#444444 gui=NONE ctermfg=254 ctermbg=238 cterm=NONE
